@@ -9,7 +9,7 @@ html, body {
 	background-color: #fff;
 }
 
-.section_main {
+#section_main {
 	width: 100vw;
 	min-height: 100vh;
 	height: auto;
@@ -17,21 +17,21 @@ html, body {
 	background-color: #566270;	
 }
 
-.section_main .section_main-logo {
+#section_main #section_main-logo {
 	position: relative;
 	min-height: 100vh;
 	height: auto;
 	width: auto;
 }
 
-.section_main .section_main-logo .section_main-logo-center {
+#section_main #section_main-logo #section_main-logo-center {
 	position: absolute;
   	top: 50%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
 
-.section_main .section_main-logo h1, h2 {
+#section_main #section_main-logo h1, h2 {
 	margin: 0;
 	padding: 10px;
 	font-family: 'Ubuntu', sans-serif;
@@ -40,7 +40,7 @@ html, body {
 	text-align: center;
 }
 
-.section_main .section_main-logo hr { 
+#section_main #section_main-logo hr { 
     display: block;
     margin: 0 auto 0 auto;
 	width: 50%;
@@ -50,19 +50,82 @@ html, body {
     border-width: 1px;
 }
 
-.section_main .section_main-logo h1 {
+#section_main #section_main-logo h1 {
 	font-size: 3em;
 }
 
-.section_main .section_main-logo h2 {
+#section_main #section_main-logo h2 {
 	font-size: 1em;
 	letter-spacing: 10px;
 }
 
-.section_about_me {
+#section_about_me {
 	max-width: 100vw;
 	height: auto;
 	padding: 30px 100px 30px 100px;
 	background-color: #E0E3DA;
 	color: #566270;
+}
+
+@media all and (min-width: 630px) {
+	#section_about_me #section_about_me-containter {
+		display: flex;
+		align-items: stretch;
+		flex-flow: row wrap;
+	}
+	
+	#section_about_me #section_about_me-containter #section_about_me-containter-avatar {
+		order: 1;
+		width: 150px;
+		float: center;
+	}
+	
+	#section_about_me #section_about_me-containter #section_about_me-containter-text {
+		margin-left: 50px;
+		order: 2;
+		width: calc(100% - 200px);
+	}
+	
+	#section_about_me #section_about_me-containter #section_about_me-containter-avatar #avatar {
+		background-image: url('avatar_1.png');
+		width: 150px;
+		height: 150px;
+		float: center;
+		background-size: cover;
+		background-position: top center;
+		border-radius: 50%;
+	}
+}
+@media all and (max-width: 629px) {
+	#section_about_me #section_about_me-containter {
+		display: flex;
+		align-items: stretch;
+		flex-flow: column wrap;
+	}
+	
+	#section_about_me #section_about_me-containter #section_about_me-containter-avatar {
+		order: 1;
+		width: 100%;
+	}
+	
+	#section_about_me #section_about_me-containter #section_about_me-containter-text {
+		order: 2;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+	#section_about_me #section_about_me-containter #section_about_me-containter-avatar #avatar {
+		background-image: url('avatar_1.png');
+		width: calc(100vw - 200px);
+		height: calc(100vw - 200px);
+		float: center;
+		background-size: cover;
+		background-position: top center;
+		border-radius: 50%;
+	}
+}
+
+#section_about_me #section_about_me-containter #section_about_me-containter-text p {
+	text-align: justify;
+    text-justify: inter-word;
 }
