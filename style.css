@@ -7,6 +7,7 @@ html, body {
 	height: auto;
 	overflow-x: hidden;
 	background-color: #fff;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 /** MAIN **/
@@ -88,10 +89,13 @@ html, body {
 		margin-left: 50px;
 		order: 2;
 		width: calc(100% - 200px);
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	
 	#section_about_me #section_about_me-containter #section_about_me-containter-avatar #avatar {
-		background-image: url('avatar_1.png');
+		background-image: url('img/avatar_1.png');
 		width: 150px;
 		height: 150px;
 		float: center;
@@ -120,7 +124,7 @@ html, body {
 	}
 	
 	#section_about_me #section_about_me-containter #section_about_me-containter-avatar #avatar {
-		background-image: url('avatar_1.png');
+		background-image: url('img/avatar_1.png');
 		width: calc(100vw - 200px);
 		height: calc(100vw - 200px);
 		float: center;
@@ -132,11 +136,90 @@ html, body {
 
 #section_about_me #section_about_me-containter #section_about_me-containter-text p {
 	text-align: justify;
-    text-justify: inter-word;
-	margin: 0;
+	display: inline-block;
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 }
 
+/** SKILLS **/
+
+#section_skills {
+	max-width: 100vw;
+	height: auto;
+	background-color: #566270;
+	color: #E0E3DA;
+	padding: 30px 100px 30px 100px;
+}
+
+#section_skills h1 {
+	margin: 0;
+	padding-bottom: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+	color: #FFFFF3;
+	text-align: center;
+}
+
+/** PROJECTS **/
+
+#section_projects {
+	max-width: 100vw;
+	height: auto;
+	background-color: #E0E3DA;
+	color: #566270;
+	padding: 30px 100px 30px 100px;
+}
+
+#section_projects h1 {
+	margin: 0;
+	padding-bottom: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 100;
+	color: #566270;
+	text-align: center;
+}
+
 /** FOOTER **/
 
+#section_footer {
+	max-width: 100vw;
+	height: auto;
+	background-color: #566270;
+	color: #E0E3DA;
+	padding: 30px 100px 30px 100px;
+}
+
+#section_footer p {
+	text-align: center;
+}
+
+#section_footer #section_footer-links {
+	display: flex;
+	align-items: stretch;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+#section_footer #section_footer-links #section_footer-links-github {
+	order: 1;
+	width: 30px;
+	float: center;
+}
+
+#section_footer #section_footer-links #section_footer-links-facebook {
+	order: 2;
+	width: 30px;
+	margin-left: 20px;
+}
+
+#section_footer #section_footer-links #section_footer-links-google_play {
+	order: 3;
+	width: 30px;
+	margin-left: 20px;
+}
+
+#section_footer #section_footer-links img {
+	width: 30px;
+	height: 30px;
+}
