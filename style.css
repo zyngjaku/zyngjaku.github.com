@@ -11,17 +11,19 @@ html, body {
 /** MAIN **/
 
 #main {
+	margin: 0;
+	padding: 0;
 	width: 100vw;
 	min-height: 100vh;
 	height: auto;
-	padding: 50px 0 50px 0;
 	background-color: #fcfcfc;
 }
 
 #main #main-content {
 	position: relative;
+	padding: 50px 0 50px 0;
 	width: 100vw;
-	min-height: 100vh;
+	min-height: 100%;
 	height: auto;
 }
 
@@ -47,9 +49,22 @@ html, body {
 
 #main #main-content h2 {
 	font-family: Ubuntu;
+	padding: auto auto 0 auto;
+	margin: auto auto 0 auto;
 	font-size: 20px;
 	font-weight: 200;
 	font-size: 1.25em;
+	color: #777777; 
+	text-align: center;
+}
+
+#main #main-content h3 {
+	font-family: Ubuntu;
+	padding: 0 auto auto auto;
+	margin: 0 auto auto auto;
+	font-size: 20px;
+	font-weight: 200;
+	font-size: 1em;
 	color: #777777; 
 	text-align: center;
 }
