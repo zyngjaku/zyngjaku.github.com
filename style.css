@@ -17,6 +17,10 @@ html, body {
 	min-height: 100vh;
 	height: auto;
 	background-color: #fcfcfc;
+	
+	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
 }
 
 #main #main-content {
@@ -88,11 +92,26 @@ html, body {
   	margin: 0 2.5px;
 }
 
+/*
+#main #main-content #main-content-about_me {
+	margin: 40px auto 40px auto;
+	text-align: center;
+	width: auto;
+	height: auto;
+}
 
+#main #main-content #main-content-about_me a {
+	font-family: Lato;
+	font-weight: 100;
+	font-size: 1.25em;
+	color: #b06500; 
+	text-decoration: none;
+}
+*/
 
 #main #main-content hr { 
     display: block;
-    margin: 0 auto 0 auto;
+    margin: 40px auto 0 auto;
 	width: 25%;
 	float: center;
 	border-color: #eee;
@@ -107,13 +126,3 @@ html, body {
 	color: #b3b3b3; 
 	text-align: center;
 }
-
-
-/*
-@media all and (min-width: 630px) {
-	
-}
-@media all and (max-width: 629px) {
-	
-}
-*/
