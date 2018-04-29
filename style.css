@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu');
-
 html, body {
 	padding: 0;
 	margin: 0;
@@ -12,310 +10,88 @@ html, body {
 
 /** MAIN **/
 
-#section_main {
+#main {
 	width: 100vw;
 	min-height: 100vh;
 	height: auto;
-	padding: 0;
-	background-color: #566270;	
+	padding: 50px 0 50px 0;
+	background-color: #fcfcfc;
 }
 
-#section_main #section_main-logo {
+#main #main-content {
 	position: relative;
+	width: 100vw;
 	min-height: 100vh;
 	height: auto;
-	width: auto;
 }
 
-#section_main #section_main-logo #section_main-logo-center {
-	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+#main #avatar {
+	margin: 0 auto;
+	background-image: url('img/me.png');
+    background-size: cover;
+    background-position: top center;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
 }
 
-#section_main #section_main-logo h1, h2 {
-	margin: 0;
-	padding: 10px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 100;
-	color: #FFFFF3; 
+#main #main-content h1 {
+	margin: 20px 0 20px 0;
+	padding: 0;
+	font-family: Lato;
+    font-weight: 400;
+	font-size: 2.5em;
+	color: #4e4e4e; 
 	text-align: center;
 }
 
-#section_main #section_main-logo hr { 
+#main #main-content h2 {
+	font-family: Ubuntu;
+	font-size: 20px;
+	font-weight: 200;
+	font-size: 1.25em;
+	color: #777777; 
+	text-align: center;
+}
+
+#main #main-content #main-content-social_media {
+	margin: 20px 0 20px 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	float: center;
+	text-align: center;
+}
+
+#main #main-content #main-content-social_media a {
+	text-decoration: none;
+}
+
+#main #main-content #main-content-social_media img {
+	display: inline;
+	width: 20px;
+  	height: 20px;
+  	margin: 0 2.5px;
+}
+
+
+
+#main #main-content hr { 
     display: block;
     margin: 0 auto 0 auto;
 	width: 50%;
 	float: center;
-	border-color: #FFFFF3;
+	border-color: #4e4e4e;
     border-style: solid;
     border-width: 1px;
 }
 
-#section_main #section_main-logo h1 {
-	font-size: 3em;
-}
 
-#section_main #section_main-logo h2 {
-	font-size: 1em;
-	letter-spacing: 10px;
-}
-
-#section_main #section_main-arrow_down {
-	position: absolute;
-	left: calc(50% - 25px);
-	bottom: 25px;
-	width: 50px;
-	height: 50px;
-}
-
-#section_main #section_main-arrow_down img {
-	width: 50px;
-	height: 50px;
-}
-
-/** ABOUT ME **/
-
-#section_about_me {
-	max-width: 100vw;
-	height: auto;
-	background-color: #E0E3DA;
-	color: #566270;
-}
-
+/*
 @media all and (min-width: 630px) {
-	#section_about_me #section_about_me-containter {
-		display: flex;
-		align-items: stretch;
-		flex-flow: row wrap;
-		padding: 60px 100px 60px 100px;
-	}
 	
-	#section_about_me #section_about_me-containter #section_about_me-containter-avatar {
-		order: 1;
-		width: 150px;
-		float: center;
-	}
-	
-	#section_about_me #section_about_me-containter #section_about_me-containter-text {
-		margin-left: 50px;
-		order: 2;
-		width: calc(100% - 200px);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	#section_about_me #section_about_me-containter #section_about_me-containter-avatar #avatar {
-		background-image: url('img/avatar_1.png');
-		width: 150px;
-		height: 150px;
-		float: center;
-		background-size: cover;
-		background-position: top center;
-		border-radius: 50%;
-	}
 }
 @media all and (max-width: 629px) {
-	#section_about_me #section_about_me-containter {
-		display: flex;
-		align-items: stretch;
-		flex-flow: column wrap;
-		padding: 30px 50px 30px 50px;
-	}
 	
-	#section_about_me #section_about_me-containter #section_about_me-containter-avatar {
-		order: 1;
-		width: 100%;
-	}
-	
-	#section_about_me #section_about_me-containter #section_about_me-containter-text {
-		order: 2;
-		width: 100%;
-		margin-top: 20px;
-	}
-	
-	#section_about_me #section_about_me-containter #section_about_me-containter-avatar #avatar {
-		background-image: url('img/avatar_1.png');
-		width: calc(100vw - 100px);
-		height: calc(100vw - 100px);
-		float: center;
-		background-size: cover;
-		background-position: top center;
-		border-radius: 50%;
-	}
 }
-
-#section_about_me #section_about_me-containter #section_about_me-containter-text p {
-	text-align: justify;
-	display: inline-block;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 16px;
-}
-
-/** SKILLS **/
-
-#section_skills {
-	max-width: 100vw;
-	height: auto;
-	background-color: #566270;
-	color: #E0E3DA;
-	padding: 30px 100px 30px 100px;
-	text-align: justify;
-}
-
-@media all and (max-width: 629px) {
-	#section_skills {
-		padding: 30px 50px 30px 50px !important;
-	}
-}
-
-#section_skills h1 {
-	margin: 0;
-	padding-bottom: 10px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 100;
-	color: #FFFFF3;
-	text-align: center;
-}
-
-/** PROJECTS **/
-
-#section_projects {
-	max-width: 100vw;
-	height: auto;
-	background-color: #E0E3DA;
-	color: #566270;
-	padding: 30px 100px 30px 100px;
-	text-align: justify;
-}
-
-@media all and (max-width: 629px) {
-	#section_projects {
-		padding: 30px 50px 30px 50px !important;
-	}
-}
-
-#section_projects h1 {
-	margin: 0;
-	padding-bottom: 10px;
-	font-family: 'Ubuntu', sans-serif;
-	font-weight: 100;
-	color: #566270;
-	text-align: center;
-}
-
-/** FOOTER **/
-
-
-@media all and (min-width: 630px) {
-	#section_footer {
-		max-width: 100vw;
-		height: auto;
-		background-color: #566270;
-		color: #E0E3DA;
-	}
-
-	#section_footer p {
-		text-align: center;
-	}
-
-	#section_footer #section_footer-content {
-		padding: 30px 100px 60px 100px;
-	}
-
-	#section_footer #section_footer-content #section_footer-content-left {
-		float: left;
-		width: auto;
-		height: 30px;
-	}
-	#section_footer #section_footer-content #section_footer-content-right {
-		float: right;
-		width: auto;
-	}
-
-	#section_footer #section_footer-content #section_footer-content-left p {
-		margin: 0;
-		display: table-cell; 
-		height: 30px; 
-		vertical-align: middle;
-		text-align: center;
-	}
-
-	#section_footer #section_footer-links {
-		display: flex;
-		align-items: stretch;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
-	}
-
-	#section_footer #section_footer-links #section_footer-links-github {
-		order: 1;
-		width: 30px;
-		float: center;
-	}
-
-	#section_footer #section_footer-links #section_footer-links-facebook {
-		order: 2;
-		width: 30px;
-		margin-left: 20px;
-	}
-
-	#section_footer #section_footer-links #section_footer-links-google_play {
-		order: 3;
-		width: 30px;
-		margin-left: 20px;
-	}
-
-	#section_footer #section_footer-links img {
-		width: 30px;
-		height: 30px;
-	}
-}
-@media all and (max-width: 629px) {
-	#section_footer {
-		max-width: 100vw;
-		height: auto;
-		background-color: #566270;
-		color: #E0E3DA;
-		padding: 30px 100px 30px 100px;
-	}
-
-	#section_footer p {
-		text-align: center;
-	}
-
-	#section_footer #section_footer-links {
-		display: flex;
-		align-items: stretch;
-		flex-flow: row wrap;
-		align-items: center;
-		justify-content: center;
-	}
-
-	#section_footer #section_footer-links #section_footer-links-github {
-		order: 1;
-		width: 30px;
-		float: center;
-	}
-
-	#section_footer #section_footer-links #section_footer-links-facebook {
-		order: 2;
-		width: 30px;
-		margin-left: 20px;
-	}
-
-	#section_footer #section_footer-links #section_footer-links-google_play {
-		order: 3;
-		width: 30px;
-		margin-left: 20px;
-	}
-
-	#section_footer #section_footer-links img {
-		width: 30px;
-		height: 30px;
-	}
-}
-
+*/

@@ -6,163 +6,34 @@
 		<meta name="description" content="Portfolio">
 		<meta name="author" content="Jakub Zyngier">
       	<title>Jakub Zyngier</title>
-				
-		<script>
-// Select all links with hashes
-$('a[href*="#"]')
-  // Remove links that don't actually link to anything
-  .not('[href="#"]')
-  .not('[href="#0"]')
-  .click(function(event) {
-    // On-page links
-    if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-      && 
-      location.hostname == this.hostname
-    ) {
-      // Figure out element to scroll to
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // Does a scroll target exist?
-      if (target.length) {
-        // Only prevent default if animation is actually gonna happen
-        event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000, function() {
-          // Callback after animation
-          // Must change focus!
-          var $target = $(target);
-          $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          };
-        });
-      }
-    }
-  });
-		</script>
-						
+		
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />					
 		<link rel="stylesheet" href="style.css">
 	</header>
 	<body>
-		<div id="section_main">
-			<div id="section_main-logo">
-				<div id="section_main-logo-center">
-					<h1>Jakub Zyngier</h1>
-					<hr />
-					<h2>IT STUDENT</h2>
-				</div>
-			</div>
-			<div id="section_main-arrow_down">
-				<a href="#section_about_me">
-					<img src="/img/arrow-down.png" />
-				</a>
-			</div>
-		</div>
-		
-		<div id="section_about_me">
-		
-			<div id="section_about_me-containter">
-			
-				<div id="section_about_me-containter-avatar">
-					<div id="avatar"></div>
-				</div>
-				<div id="section_about_me-containter-text">
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada suscipit nisl eget ornare. Cras eu est ac sem tempus maximus. Nam eget odio placerat, commodo dolor quis, suscipit erat. Praesent tincidunt nunc sit amet mi condimentum congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras hendrerit nisi quis velit aliquet, sit amet vestibulum sapien lobortis. Sed sodales sit amet est ut malesuada. Pellentesque at porttitor sapien. Donec fringilla nisi in turpis porta, nec lobortis mauris convallis. Nulla ultrices suscipit interdum. Sed eu facilisis mauris. Donec sagittis consequat lorem at scelerisque. Maecenas commodo iaculis ipsum in elementum. Ut vitae bibendum velit, quis facilisis arcu. Nulla non suscipit eros, quis vehicula nisi.
-					</p>
-				</div>
-			  
-			</div>
-		
-		</div>
-		
-		<div id="section_skills">
-		
-			<h1>MY SKILLS</h1>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum maximus leo vitae nisi malesuada tristique nec ut eros. Curabitur semper vulputate nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque aliquam urna nec velit finibus, non tempor felis efficitur. Vestibulum vulputate erat augue, in faucibus dui fringilla non. Nullam efficitur porttitor nisl sed scelerisque. Duis tempor sapien et maximus iaculis. Morbi fringilla augue efficitur dignissim luctus. Morbi finibus purus id dolor bibendum sollicitudin. Cras enim ipsum, auctor eu augue ut, interdum lacinia nunc. Duis auctor lacus varius, mattis ex at, facilisis ante. Praesent in sodales quam. Mauris id quam quis mi tempus ullamcorper quis eu massa.
-			<br /><br />
-			Maecenas eu laoreet elit. Ut sed dictum tellus. Sed ultrices felis et lorem dictum eleifend. Pellentesque malesuada ante dui, placerat elementum nibh consequat dignissim. Proin non odio in sapien feugiat rhoncus. Aenean neque orci, posuere vel odio tincidunt, dapibus mollis urna. Maecenas dolor turpis, consequat id commodo ac, cursus a diam. Nulla egestas, lacus ac blandit consequat, nunc dui fermentum est, vitae sagittis tortor metus ac lectus. Curabitur sit amet ullamcorper est. Phasellus pulvinar justo a pharetra posuere. Maecenas sed nunc at ipsum malesuada accumsan quis eu tortor. Sed id turpis eget velit sodales tristique convallis lobortis ligula. Ut a sagittis tellus. Aenean vehicula sollicitudin risus vel lacinia. Nunc ac ultricies libero.
-			<br /><br />
-			Cras sollicitudin nec est in elementum. Duis velit tellus, fringilla id finibus eget, rutrum a purus. Nunc fermentum dui non dui viverra, in tempus sapien gravida. Integer cursus ex sapien, vitae mattis risus tincidunt in. Sed elementum et velit id consectetur. Nam aliquet, dolor et venenatis gravida, eros odio commodo dui, pharetra congue libero justo a nulla. Nullam non arcu elit. Nam ornare sit amet turpis vitae sagittis. In pretium in neque nec accumsan. Praesent non maximus neque. Nam bibendum elementum dapibus.
-			<br /><br />
-			Proin non sapien leo. Suspendisse porta libero dolor. Aliquam erat volutpat. Morbi mollis accumsan velit sed venenatis. Nunc ut feugiat turpis. Mauris a ligula fermentum magna luctus facilisis ut eget turpis. Morbi eleifend libero ac fermentum eleifend.
-					
-			</div>
-		
-		<div id="section_projects">
-			<h1>PROJECTS</h1>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada suscipit nisl eget ornare. Cras eu est ac sem tempus maximus. Nam eget odio placerat, commodo dolor quis, suscipit erat. Praesent tincidunt nunc sit amet mi condimentum congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras hendrerit nisi quis velit aliquet, sit amet vestibulum sapien lobortis. Sed sodales sit amet est ut malesuada. Pellentesque at porttitor sapien. Donec fringilla nisi in turpis porta, nec lobortis mauris convallis. Nulla ultrices suscipit interdum. Sed eu facilisis mauris. Donec sagittis consequat lorem at scelerisque. Maecenas commodo iaculis ipsum in elementum. Ut vitae bibendum velit, quis facilisis arcu. Nulla non suscipit eros, quis vehicula nisi.
-		
-		</div>
-		
-		<div id="section_footer">
-		
-			<!--
-			<p id="section_footer-author">Design and coded: Jakub Zyngier</p>
 	
-			<div id="section_footer-links">
-				<div id="section_footer-links-github">
-					<a href="https://github.com/zyngjaku">
-						<img src="img/github.png" />
-					</a>
-				</div>
+		<div id="main">
+		
+			<div id="main-content">
+			
+				<div id="avatar"></div>
 				
-				<div id="section_footer-links-facebook">
-					<a href="#">
+				<h1>Jakub Zyngier</h1>	
+				<h2>Software Developer</h2>
+				
+				<div id="main-content-social_media">
+					<a href="http://www.google.com">
 						<img src="img/facebook.png" />
 					</a>
+					<img src="img/github.png" />
+					<img src="img/linkedin.png" />
+					<img src="img/google-play.png" />
 				</div>
 				
-				<div id="section_footer-links-google_play">
-					<a href="#">
-						<img src="img/google-play.png" />
-					</a>
-				</div>
-	
 			</div>
-			-->
 			
-			
-			<div id="section_footer-content">
-				<div id="section_footer-content-left">
-					<p>Design and coded: Jakub Zyngier</p>
-				</div>
-				
-				<div id="section_footer-content-right">
-				
-				
-				<div id="section_footer-links">
-					<div id="section_footer-links-github">
-						<a href="https://github.com/zyngjaku">
-							<img src="img/github.png" />
-						</a>
-					</div>
-					
-					<div id="section_footer-links-facebook">
-						<a href="#">
-							<img src="img/facebook.png" />
-						</a>
-					</div>
-					
-					<div id="section_footer-links-google_play">
-						<a href="#">
-							<img src="img/google-play.png" />
-						</a>
-					</div>
-		
-				</div>
-				
-				
-				</div>
-			</div>
-
-		
-		
 		</div>
 
 	</body>
