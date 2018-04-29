@@ -62,7 +62,6 @@ html, body {
 	font-family: Ubuntu;
 	padding: 0 auto auto auto;
 	margin: 0 auto auto auto;
-	font-size: 20px;
 	font-weight: 200;
 	font-size: 1em;
 	color: #777777; 
@@ -94,11 +93,19 @@ html, body {
 #main #main-content hr { 
     display: block;
     margin: 0 auto 0 auto;
-	width: 50%;
+	width: 25%;
 	float: center;
-	border-color: #4e4e4e;
+	border-color: #eee;
     border-style: solid;
     border-width: 1px;
+}
+
+#main #main-content #main-content-footer { 
+	font-family: Ubuntu;
+	font-weight: 200;
+	font-size: 0.8em;
+	color: #b3b3b3; 
+	text-align: center;
 }
 
 
